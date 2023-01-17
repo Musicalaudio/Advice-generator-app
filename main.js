@@ -1,8 +1,6 @@
 document.querySelector(".btn").addEventListener("click", getAdvice)
 
-
 function getAdvice () {
-  console.log('hi')
   fetch(`https://api.adviceslip.com/advice`, {cache: "no-cache"})
   .then(res => res.json())
   .then(data => {
@@ -13,7 +11,6 @@ function getAdvice () {
     console.log(`Error: ${err}`)
   })
 }
-
 
 window.onload = () =>{
   getAdvice();
