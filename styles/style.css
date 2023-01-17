@@ -23,7 +23,7 @@ h1{
   margin-bottom: 1rem;
 }
 
-blockquote{
+blockquote, p{
   color: var(--primary-cyan);
 }
 
