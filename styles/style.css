@@ -38,7 +38,7 @@ main{
   background-color: var(--neutral-dark-grayish-blue);
   padding-block: 1.2em 2em;
   padding-inline: .75em;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -49,11 +49,13 @@ main{
 .btn{
   aspect-ratio: 1;
   position: absolute;
-  bottom: -10%;
+  bottom: -1.75rem;
   left: 0;
   right: 0;
+  max-width: fit-content;
   border-radius: 50%;
-  padding: 1rem;  
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: var(--primary-neon-green);
   display: grid;
   place-content: center;
@@ -85,9 +87,6 @@ main{
 
 
 @media (min-width: 900px){
-  .card{
-    border-radius: 10px;
-  }
   
   .card__advice{
     max-width: 25ch;

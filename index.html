@@ -20,13 +20,13 @@
 </head>
 <body>
   <main>
-  <article class="card">
+  <article class="card" aria-live="polite">
     <h1 class="card__advice-id">Advice # <span class="card__advice-number"></span></h1>
     <!-- Advice ID goes here -->
     <blockquote class="card__advice">
-      <!-- "It is easy to sit up and take notice, what's different is getting up and taking action." -->
+      <!--fetch request will populate this tag-->
     </blockquote>
-    <button class="btn"><img src="./images/icon-dice.svg" alt="dice"></button>
+    <button class="btn"><span class="btn-purpose" hidden>dice - generate new random advice</span><img src="./images/icon-dice.svg" alt="dice" aria-labelledby="btn-purpose" aria-hidden="true"></button>
   </article>
   </main>
   <footer class="attribution">
